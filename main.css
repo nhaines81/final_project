@@ -1,0 +1,364 @@
+
+/*main body styling-------------------------*/
+html, body{
+    width: auto;
+    max-width: 100%;
+    align-items:center;
+    vertical-align: middle;
+    
+
+
+    
+}
+
+body p {
+     font: 14px Consolas, monospace 
+}
+
+budy ul{
+     list-style-type: none;
+}
+body img {
+    vertical-align: middle;
+}
+body a:hover {
+    color:#2D2D2D ;
+}
+body::-webkit-scrollbar {
+    width: 0.8em;
+}
+ 
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: #89bdd3;
+  
+}
+
+/*end of main body styling-----------------------*/
+/*begining of top menu styling----------*/
+
+
+/*--------new navigation bar Option 2--------*/
+
+.nav {
+  position: relative;
+  max-height: 100px;
+  max-width: 500px;
+  padding:  10px 50px;
+  font-size: 30px;
+  text-align: center;
+  border: solid red;
+  z-index: 2;
+
+}
+
+.nav ul {
+  width: 90%;
+  text-align: center;
+  display: inline;
+  margin: 0;
+  padding: 15px 3px 17px 0px;
+  list-style: none;
+border: solid green;
+
+}
+.nav ul li {
+  font: bold 15px/18px sans-serif;
+  display: inline-block;
+  margin-right: -4px;
+
+  padding: 15px 20px;
+  background: #fff;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  border: dotted blue;
+
+}
+.nav ul li:hover {
+  background: #9ad3de;
+  color: #fff;
+border-bottom:  solid red;
+padding-right: 20px;
+
+
+}
+.nav ul li ul {
+  padding: 0;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 150px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -ms-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  -transition: opacity 0.2s;
+
+}
+/*the dropdown style----*/
+.nav ul li ul li {
+  background: #89bdd3;
+  display: block;
+  color: #fff;
+  text-shadow: 0 -1px 0 #000;
+  border-bottom: 1 solid red;
+}
+.nav ul li ul li:hover { background: #89bdd3; }
+ul li:hover ul {
+  display: block;
+  opacity: 2;
+  visibility: visible;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color:black;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+.nav ul li a:hover{
+    color: #fff;
+}
+/*the end of the navigation2=====================*/
+/*+++++++++++++++++*/
+/*carousel*/
+.header {position: relative;
+
+   max-height: 450px;
+   border-bottom: solid red;
+}
+
+/*----slider code-----*/
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+
+
+div#slider { overflow: hidden; }
+div#slider figure img { width: 20%; float: left; }
+div#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 30s slidy infinite;
+}
+
+/*end of slider code---------------*/
+
+/*++++++++++++++++++++*/
+
+
+
+
+/*search bar customization------------*/
+
+.form_search {
+  width:500px;
+  margin:50px auto;
+    
+}
+.search {
+  width: 250px;
+  padding:10px 15px;
+  background:rgba(50, 50, 50, 0.2);
+  border:0px solid #dbdbdb;
+    background-color: aqua;
+}
+.search_button {
+  position:relative;
+  padding:6px 15px;
+  left:-8px;
+  border:2px solid #207cca;
+  background-color:#207cca;
+  color:#fafafa;
+  width: 70px;
+}
+
+.search_button:hover  {
+  background-color:#fafafa;
+  color:#207cca;
+}
+
+.arrow {
+  position: relative;
+  left: -8px;
+  background: #207CCA;
+  padding: 8px 15px;
+}
+
+.arrow:after {
+  right: 100%;
+  top: -10%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  border-color: rgba(32, 124, 202, 0);
+  border-right-color: #207CCA;
+  border-width: 10px;
+  margin-top: 10px;
+}
+
+
+
+
+
+/*end of search bar castomize----------------*/
+
+/*general  page setting--------------*/
+#page1, #page2, #page3, #page4 {
+   
+    display:block;
+      background-color: #9ad3de;
+      height:1000px;
+      width: 100%;
+    margin-bottom: 20px;
+    overflow: visible
+}
+/*end of general page settings--------------------------------------*/
+
+
+
+/*page1 settings------------------------------------------*/
+.header {position: relative;
+    
+    max-height: 450px;
+}
+
+ #descr{
+    background-image:
+    linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3));
+    padding: 100px;
+    height: 50px;
+    position:relative;
+    top: 300px;
+    color: white;
+    
+    transition-property: height;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    transition-delay: 1s;
+}
+#descr p {
+    padding:20px;
+   
+        }
+ #descr:hover{
+    height: 200px;
+    
+}
+
+/*page1 end design--------------*/
+
+/*page 2 design-----------------------------*/
+.pg2BG  {
+    position:relative;
+  background-image: url('images/bark.png.jpg');
+  width:100%;
+  height:100%;
+  color: white;
+  background-size: cover;
+}
+
+.wrapper_page_2 {
+  display: block;
+  width: 80%;
+  height: 70%;
+  text-align: justify;
+  position: relative;
+  top: 130px;
+  left: 90px;
+  overflow: scroll;
+  background-image:
+  linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55));
+    -webkit-color:#9ad3de ;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #89bdd3;
+  outline: 1px solid #e3e3e3;
+}
+-webkit-scrollbar-track-
+      background-color:#9ad3de ;
+
+
+/*end of page 2 --------------------------------------*/
+
+
+
+
+.text-container{
+    align-items: center;
+    width: auto;
+    max-height: 500px; 
+}
+
+.text-container #descr {
+    position: relative;
+    border: solid white;
+    width: 200px
+}
+
+.text-container img{
+   
+      width: 100%;
+     }
+/*------------------end of page3----------*/
+
+#page4 h2{
+position:relative;  padding:10px;
+    color:white;
+    
+text-align: center}
+
+.wrapper {
+    width:;
+    height: inherit;
+  
+    padding: 25px;
+    text-align: justify;
+    border: solid red;
+    overflow: hidden;
+    overflow:scroll;
+    max-height: 1000px;
+}
+
+.member {
+    
+    box-sizing: border-box;
+    box-shadow: 3em;}
+    
+
+
+/*footer of the page-------*/
+
+#main-footer { 
+    position: relative; bottom:10px; list-style-type: none;  color: white; box-sizing: border-box; background-color: #2D2D2D; padding:30px
+}
+
+#container-footer a{list-style-type: none;}
+#main-footer .logo {float: left; width: 25px}
+#main-footer .footer-links {float: left; padding-left: 20px}

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+
+   
+<html lang="en">
+    
+<head>
+<meta charset="utf-8">
+    <title>Itabo.org | Welcome</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=500, initial-scale=1">
+<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+<!--<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=0;"> -->
+<meta name="Keywords" content="real-estate, jamaica, buy a house, rent a house, property in jamaica, realtor, listing property, relocate, new house, home" />
+<!--    google analytics-->
+    
+<!--    end of g-a-->    
+    
+
+<script src="jquery-1.12.1.min.js"></script>
+<link href="main.css" rel="stylesheet" type="text/css">
+<!-- imports for smooth scroll======  -->
+
+<script src="jquery.smooth-scroll.min.js"></script>
+<script src="hello.js"></script>
+ </head>
+   
+
+   
+<body>
+
+<section class="nav">
+<ul>
+
+    <li><a href="#page1">Home</a></li>
+    <li><a href="#page4">About</a><ul>
+        <li><a href="#page4">The team</a></li>
+        <li><a href="#main-footer">Contact us</a></li>
+        <li><a href="#main-footer">Join us</a></li>
+</ul>
+
+<li>
+Get started
+<ul>
+  <li>Log In</li>
+  <li>Register</li>
+  <li>Start Listing</li>
+    <li>Start Searching</li>
+</ul>
+</li>
+    <li>Mapview<ul>
+  <li><a href="#searching.html">Explore</a></li>
+  <li><a href="#searching.html">Buy</a></li>
+  <li><a href="#searching.html">Sell</a></li>
+</ul>
+<li><a href="#footer">Contact</a></li>
+</ul>
+    </section>
+
+
+    <section class="header" id="welcome-header">
+<!-- slider -->
+<div id="slider">
+<figure>
+<img src="images/Feature.jpg" alt="beach">
+<img src="images/pier.png.jpg" alt="water and wood">
+<img src="seash.png.jpg" alt="seashore">
+<img src="hotel.png.jpg" alt="hotel view">
+<img src="beaut.png.jpg" alt="water and reflections">
+</figure>
+</div>
+
+<!-- -end of slider-->
+
+
+
+
+
+     
+<div class="search-layer">
+              
+<!--
+     <form id="search" method="GET" action="searching.html">
+        <h3>Explore your perfect home</h3>
+                  
+   <ul class="targets">
+       <li><button id="btn_any"  type="button"  onclick="chg_mode('any')">Any</button></li>
+       <li><button id="btn_buy"  type="button"  onclick="chg_mode('buy')">Buy</button></li>
+       <li><button id="btn_rent" type="button"  onclick="chg_mode('rent')">Rent</button></li>
+                  </ul>
+    <span class="glyphicon glyphicon-search"></span>
+      <input type="text" id="term" name="term" placeholder="Enter City or Parish" />
+      <span class="glyphicon glyphicon-option-vertical"></span> 
+    <input type="hidden" id="find_what"  name="type"  value="any" />
+  </form>
+-->
+   <form class="form_search">
+      <input class="search" placeholder="City, Town, Parish" required>
+      <span class="arrow">
+        <input type="button" class="search_button" value="Search">
+      </span>
+    </form>
+ </div>
+    
+    
+    
+    <script>
+         var find_what_ = 'any';   function chg_mode(f) {
+           console.log(find_what_ + " - " + f);
+           $("#btn_" + find_what_).removeClass('ugreen');
+           $("#btn_" + find_what_).addClass('ugreen-off');
+           find_what_ = f;
+           $("#btn_" + f).addClass('ugreen');
+           $("#btn_" + f).removeClass('ugreen-off');
+           $("#find_what").val(f);
+       }
+    </script>
+    
+<div id="descr">
+    
+  
+        <p >itabo in the Taíno language, means a pond of clear water.  Our organization seeks to bring transparency to the land market to help governments, businesses and citizens make informed decisions regarding land and property</p>
+    </div>
+        
+
+
+<!--    this is page about us-->
+
+
+<div data-full="true" id="page2">
+  <a id="about" class="smooth"></a>
+    <!-- <div class="page2img">
+        <img src="drops.png.jpg" alt="drops">
+    </div> -->
+<section class="pg2BG">
+    <div class="wrapper_page_2">
+
+        <p>In the Taíno language of the pre-Colombian Caribbean, itabo means a body of clear water.  This name represents our mission statement.  itabo seeks to bring transparency to the land market to help government agencies, businesses, and citizens make informed decisions regarding land and property.  Currently, critical stakeholders do not have the level of access to land data that the United States already has at its fingertips.  Based upon graduate-level research both in Jamaica and in broader land tenure studies, Keith Mantel (co-founder and CEO of itabo) created a solution to this problem.  In March, Keith will be presenting these findings at the annual World Bank conference on land and poverty. </p>
+            <p>Economists accept that governance of public wealth is one of the crucial institutional building blocks that divides well run countries from fragile states.  This assertion is grounded in observations showing that governments and private citizens around the world have trillions of dollars of public assets that are often poorly managed and frequently unaccounted for on their balance sheets.  The term “dead capital” has been coined to describe assets which have value but are unable to be used (leveraged).  However, in recent decades, policymakers have focused almost solely on managing debt while largely ignoring the issue of public wealth. </p>
+                <p>Zillow is the leader in the US for providing real estate related information and has 140 million unique visitors per month across all of its platforms.  However, the company has maintained that it has no plans for foreign expansion, focusing instead on internal US growth.  It is our contention that a Zillow-like model can and should be applied to transitioning global economies where property data is not readily available to the public in order to balance the information asymmetry that currently exists.  The key is to leverage the inherent value of the real estate market by selling advertising space on the itabo website and mobile application to those most connected to the land market: realtors, mortgage lenders, construction, insurance companies, and other land users. </p>
+                    <p>Blending the skills of Keith (with an MBA     in Economics and Finance as well as Geospatial Information Systems) and the near decade of computer programming skills of co-founder and CTO, Anthony Dewstow, itabo is creating the leading real estate and home-related information marketplace in Jamaica to help people find vital information about homes, and connect with local professionals.  We are transforming the way people make home-related decisions, and enabling homeowners, buyers, sellers and renters to find and connect with local professionals best suited to meet their needs. </p>
+        <p>For more information, please contact us at info@itabo.org or follow us on Twitter @itaboHQ</p>
+        </div>
+      </section>
+ </div>
+
+
+
+<!--this the end of second page------------------>
+
+
+<!--    this is the third page with the map-->
+    
+<div data-full="true" id="page3">
+  <a id="mapview" class="smooth"></a>
+    
+    </div>
+
+  
+     
+
+
+<script type="text/javascript">
+var show_detail_link = true;
+var map;
+
+function initMap() {
+ var w = window.innerWidth;
+ if (w < 800) {
+   $("#map").css("width", '100%');
+ }
+ map = new google.maps.Map(document.getElementById("map"), {
+   center: {
+     lat: 18.4194071563, lng: -77.1510574916    },
+   zoom: 10,
+   mapTypeId: google.maps.MapTypeId.ROADMAP,
+   width: 0,
+   
+ });
+ google.maps.event.addListenerOnce(map, 'idle', function() {
+   // get_data_what();
+ });
+ map.addListener('bounds_changed', function() {
+   get_data();
+ });
+}
+</script> 
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGJmYngLdpacf5Hds82xJSgP13OGh8dPc&callback=initMap"></script> 
+
+    
+    
+    
+<!--    this is page team: page 4-->
+        
+        <div data-full="true" id="page4">
+<a id="team" class="smooth"></a>
+
+
+ <div class="wrapper">
+     <h2>Meet the team</h2>
+   <div class="member">
+   <table style="width: 100%;" cellpadding="10" cellspacing="10">
+     <tr>
+         <td valign="middle" width=25%><img src="images/keith.jpg" width="100%" height="80%" alt="the prof pic"/></td>
+            <td valign="middle" width=75%><h2>Keith Mantel</h2>
+             <h3>Co-founder and Chief Executive Officer</h3>
+
+             <p>Keith has spent much of the last 10 years living and working abroad in post-conflict and underdeveloped regions of the world. He graduated from the University of Maryland with a BA in Government and International Development. Seeking opportunities in the foreign policy sphere, he joined US Army Intelligence and served for six years, deploying to Iraq and Afghanistan.  While in the military, Keith completed his MBA and also acquired skills in GIS, management, and data collection and analysis. Frustrated with military’s function in nation building, he decided to apply his skills elsewhere in global development.</p>
+             <p>Focusing on land rights, he traveled to Myanmar, conducting research on land tenure disputes. He discovered that land also played a significant role in the stagnation of poverty reduction and political development. Keith is now completing his thesis for a Master’s of Science with the Technical University of Munich, on research conducted throughout 2015 in Jamaica.</p>
+
+             <a href="http://www.twitter.com/KeithMantel"><img src="http://www.whitman-ma.gov/ImageRepository/Document?documentID=204"></a>
+             <a href="https://www.linkedin.com/in/keithmantel"><img src="http://www.mpsenergi.co.uk/wp-content/uploads/2012/10/Linkedin3.png"></a>
+         </td>       
+     </tr>
+       <hr>
+     <tr>
+         <td width=25% valign="middle"><img src="images/anthony.png" width="100%" height="80%" alt="the prof pic2"/></td>
+         <td width=75% valign="middle"><h2 >Anthony Dewstow</h2>
+           <h3>Co-founder and Chief Technology Officer</h3>
+
+           <p>Anthony has been a PHP and MySQL programmer since 2008. Anthony has a passion for programming and has worked in both small and large companies. He has programmed a number of custom website applications from the begining and has also developed large process management applications. With an interest in mapping and real estate, Anthony developed a website that makes it easy for consumers in the Houston area to learn about the rental market with an attractive UI/UX integrated into Google Maps. He has vast experience making HTML5 and mobile ready websites that leverage jQuery and AJAX to help sites load quickly and responsively using small and efficient code.</p>
+           <p> Anthony is unique because he has expertise with both front and backend development and is proficient with several other languages to include CSS, XML, JavaScript, as well as Google and Facebook APIs. Anthony is also proficient on the server side with a keen understanding of website security and cloud storage such as Amazon S3. Anthony graduated from the University of Houston Downtown in 2012 with a Bachelor of Science.</p>
+
+           <a href="http://www.twitter.com/amdewstow"><img src="http://www.whitman-ma.gov/ImageRepository/Document?documentID=204"></a>
+           <a href="https://www.linkedin.com/in/anthonydewstow"><img src="http://www.mpsenergi.co.uk/wp-content/uploads/2012/10/Linkedin3.png"></a>
+
+           </td>
+     </tr>
+   </table>
+</div>
+ 
+
+<!--
+<div data-full="true" id="page4">
+ <a id="team" class="smooth"></a> 
+    
+ 
+    
+<h2>Meet the team</h2>
+ <div class="wrapper">
+   <div class="member">
+     <img src="images/keith.jpg" class="img-circle" alt="the prof pic"/>
+      <h3>Keith Mantel Co-founder & CEO</h3>
+    
+   
+      <p>Keith has spent much of the last 10 years living and working abroad in post-conflict and underdeveloped regions of the world.  He graduated from the University of Maryland with a BA in Government and International Development.  Seeking opportunities in the foreign policy sphere, he joined US Army Intelligence and served for six years, deploying to Iraq and Afghanistan.  While in the military, Keith completed his MBA and also acquired skills in GIS, management, and data collection and analysis.  Frustrated with military’s function in nation building, he decided to apply his skills elsewhere in global development. </p>
+        <p> Focusing on land rights, he traveled to Myanmar, conducting research on land tenure disputes. He discovered that land also played a significant role in the stagnation of poverty reduction and political development.  Keith is now completing his thesis for a Master’s of Science with the Technical University of Munich, on research conducted throughout 2015 in Jamaica.  The results of his findings will be discussed in the upcoming World Bank conference on Land and Poverty. </p>
+    
+    </div>
+    
+
+    <div class="member">
+      <img src="images/anthony.png" class="img-circle" alt="the prof pic2"/>
+     <h3>Anthony Dewstow Co-founder & CTO</h3>
+    
+ <p>Anthony has been a PHP and MySQL programmer since 2008. Anthony has a passion for programming and has worked in both small and large companies. He has programmed a number of custom website applications from scratch and has also developed large process management applications. With an interest in mapping and real estate, Anthony developed a website that makes it easy for consumers in the Houston area to learn about the rental market with an attractive UI/UX integrated into Google Maps. He has vast experience making HTML5 and mobile ready websites that leverage jQuery and AJAX to help sites load quickly and responsively using small and efficient code. </p>
+    <p> Anthony is unique because he has expertise with both front and backend development and is proficient with several other languages to include CSS, XML, JavaScript, as well as Google and Facebook APIs. Anthony is also proficient on the server side with a keen understanding of website security and cloud storage such as Amazon S3. Anthony graduated from the University of Houston Downtown in 2012 with a Bachelor of Science. </p>
+    
+    </div>
+ </div>   
+-->
+</div>
+
+<!--    the foother with fixed positioning-->
+<footer id="main-footer">
+<div id="container-footer">
+    <p class="logo">
+        <img src="images/android-icon-96x96.png" alt="logoitabo" scale="0"> 
+        Welcome: itabo<br>
+        <small class="copyright"> ©2016 by itabo. </small>
+    </p>
+    <small class="copyright"> ©2016 by itabo. </small>
+    <div class="footer-links" id="footer-contact">
+       <h4>Email us</h4>
+          <ul>
+            <li>
+                <a href="mailto:info@itabo.org">info@itabo.org</a> 
+            </li>
+        </ul>
+    </div>
+    <div class="media">
+       <h4>Twitter</h4>
+        <ul>
+            <li>
+         <a href="http://twitter.com/itaboHQ">@itaboHQ</a> 
+     </li>
+ </ul>
+    </div>
+    <p>Call us</p>
+    <p>301-452-8767</p>
+
+
+    
+    </div>
+</footer>
+    
+</body>
+</html>

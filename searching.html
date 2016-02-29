@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, user-scalable=no" />
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+<!-- Bootstrap -->
+
+<link href="main.css" rel="stylesheet">
+
+
+<title>Itabo.org | Searching</title>
+</head>
+<body>
+
+    <section class="search-layer">
+              
+     <form id="search" style="text-align: center;" method="GET" action="searching.html">
+        <h3>Explore your perfect home</h3>
+                  
+   <ul class="targets">
+       <li><button id="btn_any"  type="button"  onclick="chg_mode('any')">Any</button></li>
+       <li><button id="btn_buy"  type="button"  onclick="chg_mode('buy')">Buy</button></li>
+       <li><button id="btn_rent" type="button"  onclick="chg_mode('rent')">Rent</button></li>
+                  </ul>
+    <span class="glyphicon glyphicon-search"></span>
+      <input type="text" id="term" name="term" placeholder="Enter City or Parish" />
+      <span class="glyphicon glyphicon-option-vertical"></span> 
+    <input type="hidden" id="find_what"  name="type"  value="any" />
+         <h3> Price </h3>
+    <div class="row">
+      <button id="min_price" name="min_price" type="button" class="btn-custom ugreen" >Min</button>
+      <button id="max_price" name="max_price" type="button" class="btn-custom ugreen">max</button>
+    </div>
+    <h3> House Size </h3>
+    <div class="row">
+      <button id="hs_price" name="hs_price" type="button" class="btn-custom ugreen" >Min</button>
+      <button id="hs_price" name="hs_price" type="button" class="btn-custom ugreen" >max</button>
+    </div>
+    <h3> Lot Size </h3>
+    <div class="row">
+      <button id="ls_price" name="ls_price" type="button" class="btn-custom ugreen" >Min</button>
+      <button id="ls_price" name="ls_price" type="button" class="btn-custom ugreen" >max</button>
+    </div>
+  </form>
+   
+ </section>
+<script>
+     var find_what_ = 'any';   function chg_mode(f) {
+       console.log(find_what_ + " - " + f);
+       $("#btn_" + find_what_).removeClass('ugreen');
+       $("#btn_" + find_what_).addClass('ugreen-off');
+       find_what_ = f;
+       $("#btn_" + f).addClass('ugreen');
+       $("#btn_" + f).removeClass('ugreen-off');
+       $("#find_what").val(f);
+   }
+</script>
+                  
+
+<!--  <form id="search" style="text-align: center;" method="GET" action="searching.html">-->
+<!--
+ <div class="row"> <span class="glyphicon glyphicon-search"></span>
+   <input type="text" id="term" name="term" placeholder="Enter City or Parish" value="ann" />
+-->
+<!--     <span class="glyphicon glyphicon-option-vertical"></span> </div>-->
+<!--
+    <div class="row" style="align-items: center; text-align: center; font-size: 20em">
+      <select id="type">
+        <option value="any" selected >Rent or Buy</option>
+        <option value="buy">For Sale</option>
+        <option value="rent">For Rent</option>
+      </select>
+    </div>
+-->
+<!--    end here-------------->
+<!--    map-------->
+  
+      <div style="height:500px; width:600px; margin-left: 50px; padding: 20px"; id="map">map</div>
+<!--
+    <style type="text/css">
+  #map { height:400px; width:600px; }
+</style>
+  
+-->
+    
+<!--    map end------>
+    
+    
+  <div class="row bb">
+    <div class="col-md-3"><a href="property_5607.html"><img src="images/parcels/5607/s_cc082d2f6179d9094921795aa1943b41.jpg"/></a></div>
+    <div class="col-md-2"></div>
+    <div class="col-md-3">03103021037</div>
+    <div class="col-md-3">ST ANNS BAY P O</div>
+  </div>
+    
+<!--
+    
+  <div class="row bb">
+    <div class="col-md-3"><a href="property_6524.html"><img src="images/parcels/6524/s_bf2b85593ce707588b4eb23b43a4277b.jpg"/></a></div>
+    <div class="col-md-2"></div>
+    <div class="col-md-3">03201003042</div>
+    <div class="col-md-3">ST ANNS BAY P O</div>
+  </div>
+  <div class="row bb">
+    <div class="col-md-3"><a href="property_17214.html"><img src="images/parcels/17214/s_a8ba4d7e734601dbdfcb436cd6726eeb.jpg"/></a></div>
+    <div class="col-md-2"></div>
+    <div class="col-md-3">01704004135</div>
+    <div class="col-md-3">ST ANNS BAY P O</div>
+  </div>
+-->
+<!--
+  <div class="row bb">
+    <div class="col-md-3"><a href="property_47993.html"><img src="images/parcels/47993/s_132836bb43dd2106a7721eefa94a20e2.jpg"/></a></div>
+    <div class="col-md-2"></div>
+    <div class="col-md-3">03102021010</div>
+    <div class="col-md-3">ST ANNS BAY P O</div>
+  </div>
+  <div class="row bb">
+    <div class="col-md-3"><a href="property_58463.html"><img src="images/parcels/58463/s_d750f2917c12f64457baf1fb8f45b2a6.jpg"/></a></div>
+    <div class="col-md-2"></div>
+    <div class="col-md-3">03101013316</div>
+    <div class="col-md-3">ST ANNS BAY P O</div>
+  </div>
+-->
+<!--
+  <div class="row bb">
+    <div class="col-md-3"><a href="property_60849.html"><img src="images/parcels/60849/s_5337873e337eea802761ffcb8ac61ace.jpg"/></a></div>
+    <div class="col-md-2"> ~$5,000,000/m</div>
+    <div class="col-md-3">03101013095</div>
+    <div class="col-md-3">ST. ANNS BAY P O</div>
+  </div>
+-->
+</div>
+<script src="js/map.js"></script> 
+<script type="text/javascript">
+var map;
+
+function initMap() {
+      var w = window.innerWidth;
+  if (w < 800) {
+    $("#map").css("width", '100%');
+  }
+  map = new google.maps.Map(document.getElementById("map"), {
+    center: {
+      lat: 18.4401986973, lng: -77.2049428614    },
+    zoom: 10,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+  });
+  google.maps.event.addListenerOnce(map, 'idle', function() {
+   // get_map_data_s();
+  })
+   map.addListener('bounds_changed', function() {
+    get_datas();
+  })
+}
+        </script> <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGJmYngLdpacf5Hds82xJSgP13OGh8dPc&callback=initMap"></script> 
+        <script>
+                    
+ var pids = '-1,5607,6524,17214,47993,58463,60849';
+                    
+
+</script>
+    
+        <div class="gallery" align="left">
+    <h3>Property Images</h3>
+
+    <div class="thumbnails">
+      <img onmouseover="preview.src=img1.src" name="img1" src="images/parcels/5607/s_cc082d2f6179d9094921795aa1943b41.jpg" alt="" />
+      <img onmouseover="preview.src=img2.src" name="img2" src="images/parcels/6524/s_bf2b85593ce707588b4eb23b43a4277b.jpg" alt="" />
+      <img onmouseover="preview.src=img3.src" name="img3" src="images/parcels/17214/s_a8ba4d7e734601dbdfcb436cd6726eeb.jpg" alt="" />
+      <img onmouseover="preview.src=img4.src" name="img4" src="images/parcels/58463/s_d750f2917c12f64457baf1fb8f45b2a6.jpg" alt="" />
+      <img onmouseover="preview.src=img5.src" name="img5" src="images/parcels/60849/s_5337873e337eea802761ffcb8ac61ace.jpg" alt="" />
+    </div>
+
+    <div class="preview" align="center">
+      <img name="preview" src="images/parcels/5607/s_cc082d2f6179d9094921795aa1943b41.jpg" alt=""/>
+    </div>
+
+  </div> 
+    <style type="text/css">
+	body {
+		background: white;
+		margin: 0;
+	}
+	.thumbnails img {
+		height: 80px;
+		border: 4px solid #555;
+        padding-top: 10px;
+		padding: 1px;
+		margin: 0 10px 10px 0;
+	}
+
+	.thumbnails img:hover {
+		border: 4px solid #00ccff;
+		cursor:pointer;
+	}
+
+	.preview img {
+		border: 4px solid #444;
+		padding: 1px;
+		width: 600px;
+        float: left;
+	}
+</style>
+    </div>    
+</body>
+</html>
